@@ -15,7 +15,6 @@ Produces a 5–7 page briefing covering company overview, leadership, culture, c
 
 ## Skill
 
-
 # Account Briefing Report — Claude Skill
 
 A [Claude Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) that generates a formal, research-backed account briefing document for enterprise sales — the kind of pre-call research you'd do before selling into a target company. Originally built for enterprise technology sales (cloud/infrastructure), but the structure generalizes to any B2B sales motion.
@@ -30,21 +29,28 @@ Given a job title, your company, and a target account name + URL, Claude will:
 
 Ideal length is 5–7 pages (soft cap of 15). Sections are fully structured with headings, and the "Our Value Offer" section is broken into per-initiative subsections (Problem/Goal, Our Solution, Value, Key Personas, Sales Strategy & Cycle) so it reads like a real internal sales brief, not a Wikipedia summary.
 
-## Installation
-
-### Claude.ai / Claude apps
-Download `SKILL.md` (or the packaged `.skill` file, if you build one — see below) and add it via **Settings → Capabilities → Skills** (or the in-conversation "Save skill" prompt if a teammate shares it with you in a chat).
-
-### Claude Code / API
-Copy the `SKILL.md` folder into your skills directory (e.g. `.claude/skills/` for a project, or your global skills path). See [Anthropic's Skills documentation](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) for the exact path conventions for your setup.
 
 ## Usage
 
-Just ask Claude for account research, e.g.:
+1. Open [`SKILL.md`](./SKILL.md) and copy the fenced code block — that's the full skill, ready to paste as-is.
+2. Add it to Claude:
+   - **Claude.ai / Claude apps:**
+     ```
+     Settings → Capabilities → Skills → paste or upload
+     ```
+   - **Claude Code / API:**
+     ```
+     Save it as SKILL.md in your skills directory (e.g. .claude/skills/ for a project, or your global skills path).
+     ```
+3. Ask Claude for account research, e.g.:
+   > "I need an account brief for Acme Corp — I'm an Account Executive at MyCompany, acmecorp.com"
+4. Claude will ask for anything it's missing (your job title, your company, the target account + URL) before starting research, then generate and hand you a downloadable `.docx`.
 
-> "I need an account brief for Acme Corp — I'm an Account Executive at MyCompany, acmecorp.com"
+## Placeholders
 
-Claude will ask for anything it's missing (your job title, your company, the target account + URL) before starting research, then generate and hand you a downloadable `.docx`.
+- `<YOUR JOB TITLE>` — e.g. "Account Executive"
+- `<YOUR COMPANY>` — e.g. "MyCompany"
+- `<ACCOUNT NAME>` — filled in automatically per use, based on the target account you provide
 
 ## Requirements
 
