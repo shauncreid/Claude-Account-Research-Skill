@@ -1,3 +1,4 @@
+```markdown
 ---
 name: account-briefing-report
 description: "Generates a formal account/target-company briefing document for enterprise sales research, including a challenger-style 'our value offer' section. Use whenever the user asks for a sales account brief, target account research, pre-call/pre-meeting research on a company they're selling into, or a competitive/risk overview of a prospect or customer account."
@@ -80,3 +81,4 @@ This skill was converted from a Google Gemini "Gem." Key changes made for Claude
 - Removed the Canvas-layout output instruction; output is now a real `.docx` file via the `docx` skill.
 - Removed Gemini-specific UI language; added an explicit research step using web search/fetch tools.
 - Kept all mandatory sections, variable placeholders, and the challenger-sales structure unchanged.
+```
