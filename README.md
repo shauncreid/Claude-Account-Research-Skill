@@ -14,7 +14,7 @@ Produces a 5–7 page briefing covering company overview, leadership, culture, c
 4. Claude will generate the brief as a Word document (`.docx`) named `<Company Name> Executive Brief`.
 
 ## Skill
-```markdown
+
 
 # Account Briefing Report — Claude Skill
 
@@ -58,4 +58,3 @@ The mandatory section list and the "challenger mentality" framing in `SKILL.md` 
 ## License
 
 MIT — see [LICENSE](LICENSE).
-```
