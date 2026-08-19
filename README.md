@@ -1,3 +1,19 @@
+## About
+
+A Claude skill that generates a detailed, formal executive briefing document to help an account executive to quickly get a point of view on how they can help an account they are tareting. Just provide a company name, website URL, your job title, and company — Claude handles the research and formatting.
+
+## What it does
+
+Produces a 5–7 page briefing covering company overview, leadership, culture, competitive landscape, business risks, a Challenger Sale point of view, and additional resources for deeper analysis (podcasts, keynotes, blog posts, recent news).
+
+## Usage
+
+1. Copy the prompt below into Claude (or wherever you keep reusable skills).
+2. Fill in `<current job title>` and `<current employer>` with your own details.
+3. Provide the target company's name, URL, and a link to the job description.
+4. Claude will generate the brief as a Word document (`.docx`) named `<Company Name> Executive Brief`.
+
+## Skill
 ```markdown
 
 # Account Briefing Report — Claude Skill
